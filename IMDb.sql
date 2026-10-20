@@ -149,13 +149,13 @@
 
 -- Mencari nama aktor dengan akhiran huruf 's'
 -- SELECT last_name from actors
--- WHERE RIGHT(last_name, 1) = 's';
+-- WHERE last_name LIKE '%s'
 
 -- Mencari movie dengan rating 5 - 7 dengan tahun rilis antara 2004 - 2006
 -- SELECT id, name, rating, year FROM movies
--- WHERE rating > 5 AND rating < 7 AND year >= 2004 AND year <= 2006
+-- WHERE rating BETWEEN 5 AND 7 AND year BETWEEN 2004 AND 2006
 
 -- Menghitung jumlah movie dengan rating = 6
--- SELECT COUNT(*) from movies
+-- SELECT COUNT(rating) from movies
 -- WHERE rating = 6;
 
